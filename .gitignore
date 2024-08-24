@@ -1,8 +1,14 @@
 # Ignore .idea folder (JetBrains IDE settings)
 .idea/
 
-# Ignore cmake-build-debug folder (CMake build artifacts)
-cmake-build-debug/
+# Ignore all build folders
+build/
 
-#Ignore CMakelists.txt files in all directories
-**/CMakeLists.txt
+# Ignore folders starting with cmake-build-
+cmake-build-*/
+
+# Ignore folders starting with qmake-build-
+qmake-build-*/
+
+# Ignore files ending in .pro.user for Qt Creator
+*.pro.user
